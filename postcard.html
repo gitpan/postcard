@@ -1,0 +1,50 @@
+<html>
+<head><title>Postcards from Kentucky</title></head>
+<body>
+<h2>Send a postcard over the Internet!</h2>
+Just fill out the form below to send a scenic Kentucky postcard to a friend - These are all pictures that I took near my home.
+<hr>
+<form method=post action="/scripts/post/send_postcard.pl">
+Select one of these pictures:<br>
+<table>
+<tr>
+<td><input type=radio name=picture value=ky_pic1.gif checked>  <a href=/scripts/post/images/ky_pic1.gif>Stone fence</a>
+<td><input type=radio name=picture value=ky_pic2.gif>  <a href=/scripts/post/images/ky_pic2.gif>Another stone fence</a> <tr><td><input type=radio name=picture value=ky_pic3.gif>  <a href=/scripts/post/images/ky_pic3.gif>A horse's head</a>
+<td><input type=radio name=picture value=ky_pic4.gif>  <a href=/scripts/post/images/ky_pic4.gif>A red barn</a>
+<tr><td><input type=radio name=picture value=ky_pic5.gif>  <a href=/scripts/post/images/ky_pic5.gif>Another red barn</a>
+<td><input type=radio name=picture value=ky_pic6.gif>  <a href=/scripts/post/images/ky_photos/ky_pic6.gif>Iron gates</a>
+<tr><td><input type=radio name=picture value=ky_pic7.gif>  <a href=/scripts/post/images/ky_pic7.gif>Country road</a>
+<td><input type=radio name=picture value=ky_pic8.gif>  <a href=/scripts/post/images/ky_pic8.gif>Old farm (1800s)</a>
+<tr><td><input type=radio name=picture value=ky_pic9.gif>  <a href=/scripts/post/images/ky_pic9.gif>Horse farm</a>
+<td><input type=radio name=picture value=ky_pic10.gif>  <a href=/scripts/post/images/ky_pic10.gif>Yet another stone fence</a>
+<tr><td><input type=radio name=picture value=ky_pic11.gif> <a href=/scripts/post/images/ky_pic11.gif>Waterfall</a>
+<td><input type=radio name=picture value=ky_pic12.gif>  <a href=/scripts/post/images/ky_pic12.gif>Palamino (Horse)</a>
+<tr><td><input type=radio name=picture value=ky_pic13.gif>  <a href=/scripts/post/images/ky_pic13.gif>Tree</a>
+<td><input type=radio name=picture value=ky_pic14.gif>  <a href=/scripts/post/images/ky_pic14.gif>Some horses</a>
+<tr><td><input type=radio name=picture value=ky_pic15.gif>  <a href=/scripts/post/images/ky_pic15.gif>More horses</a>
+<td><input type=radio name=picture value=ky_pic16.gif>  <a href=/scripts/post/images/ky_pic16.gif>Another horse</a>
+<tr><td><input type=radio name=picture value=ky_pic17.gif>  <a href=/scripts/post/images/ky_pic17.gif>Commonwealth stadium (University of Kentucky)</a>
+<td><input type=radio name=picture value=ky_pic18.gif>  <a href=/scripts/post/images/ky_pic18.gif>Memorial Hall (University of Kentucky)</a>
+<tr><td><input type=radio name=picture value=ky_pic19.gif>  <a href=/scripts/post/images/ky_pic19.gif>The UK sundial</a>
+<td><input type=radio name=picture value=ky_pic20.gif>  <a href=/scripts/post/images/ky_pic20.gif>Scenic country bridge</a>
+</table>
+
+The email address of the person we will send the postcard to:<br>
+<input name=mail><br>
+
+Your name:<br>
+<input name=from><br>
+
+Your email address. (For the Reply To: field of the postcard)<br>
+<input name=replyto><br>
+
+Your message:<br>
+<textarea rows=4 cols=60 name=message>
+The weather is here, wish you were beautiful.
+</textarea>
+
+<hr>
+<input type=submit value="Send the postcard">        <input type=reset>
+
+</body></html>
+

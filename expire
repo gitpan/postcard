@@ -1,0 +1,29 @@
+#!/usr/bin/perl
+#
+#       Expire the old entries in the cardfile
+####################
+$old=14;
+$cardfile="/home2/rbowen/public_html/scripts/post/cardfile";
+require '/home2/rbowen/public_html/scripts/post/httools.pl';
+
+&todayjulean;
+# print "$today\n";
+
+# sleep 5;
+
+open (CARDS, "$cardfile");
+@cards=<CARDS>;
+close CARDS;
+
+foreach $card (@cards)  {
+($word,$from,$picture,$message,$date)=split(/~~~/,$card);
+$diff=($today-$date);
+# print "$diff\n";
+push (@newcards,$card) unless ($diff >14);
+                        }
+
+open (CARDS, ">$cardfile");
+foreach $card (@newcards)       {
+print CARDS $card;              }
+
+#  print "Postcard file updated\n";
